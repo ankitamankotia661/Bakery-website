@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Lily | Bakery & Café</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- AOS Animate on Scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Loading screen -->
+  <div id="loader" class="loader-screen" aria-hidden="true">
+    <div class="loader-spinner"></div>
+  </div>
+
+  <!-- Scroll to top button -->
+  <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Header / Navbar -->
+  <header id="navbar" class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo" aria-label="Lily Home">
+        <i class="fas fa-bread-slice"></i> Lily
+      </a>
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+          <li><a href="#menu" class="nav-link" data-section="menu">Menu</a></li>
+          <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+          <li><a href="#gallery" class="nav-link" data-section="gallery">Gallery</a></li>
+          <li><a href="#testimonials" class="nav-link" data-section="testimonials">Testimonials</a></li>
+          <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section (simplified, no floating illustration) -->
+    <section id="home" class="hero section-padding">
+      <div class="container hero-grid">
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="800">
+          <h1 class="hero-title">Freshly Baked, <br>With Love.</h1>
+          <p class="hero-description">Handmade pastries and artisan coffee in a cozy corner. Taste the warmth of Lily.</p>
+          <div class="hero-buttons">
+            <a href="# .
+
+            ." class="btn btn-primary">Order Now</a>
+            <a href="#menu" class="btn btn-outline">Explore Menu</a>
+          </div>
+        </div>
+       
+      </div>
+    </section>
+
+    <!-- About Section (simplified, no extra image) -->
+    <section id="about" class="about section-padding bg-light">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Our Story</h2>
+          <p>Why Lily feels like home</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-text" data-aos="fade-right" data-aos-duration="700">
+            <h3>From our oven to your heart</h3>
+            <p>Lily started as a small family kitchen. Every pastry and coffee is made with premium ingredients and a passion for perfection. We believe in handmade goodness, fresh every morning.</p>
+          </div>
+          <div class="about-features" data-aos="fade-left" data-aos-duration="700">
+            <div class="feature-card">
+              <i class="fas fa-leaf"></i>
+              <h4>Fresh Daily</h4>
+              <p>We bake every morning using locally sourced ingredients.</p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-hand-holding-heart"></i>
+              <h4>Handmade</h4>
+              <p>Artisan techniques, no shortcuts. Just real, handmade love.</p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-award"></i>
+              <h4>Premium Ingredients</h4>
+              <p>Belgian chocolate, French butter, and organic flour.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products / Menu -->
+    <section id="menu" class="menu section-padding">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Featured Delights</h2>
+          <p>Handpicked favorites from our menu</p>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+      </div>
+    </section>
+
+    <!-- Special Offers -->
+    <section class="offers section-padding bg-accent">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Special Offers</h2>
+          <p>Sweet deals just for you</p>
+        </div>
+        <div class="offers-grid">
+          <div class="offer-card" data-aos="zoom-in" data-aos-delay="100">
+            <i class="fas fa-gift"></i>
+            <h3>Buy 2 Get 1</h3>
+            <p>On all pastries every Tuesday.</p>
+          </div>
+          <div class="offer-card" data-aos="zoom-in" data-aos-delay="200">
+            <i class="fas fa-calendar-alt"></i>
+            <h3>Weekend Brunch</h3>
+            <p>Free coffee with any cake slice.</p>
+          </div>
+          <div class="offer-card" data-aos="zoom-in" data-aos-delay="300">
+            <i class="fas fa-mug-hot"></i>
+            <h3>Coffee Combo</h3>
+            <p>Croissant + Latte at $5.99</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery (simplified, fewer images) -->
+    <section id="gallery" class="gallery section-padding">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Our Gallery</h2>
+          <p>Take a peek inside Lily</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item" data-aos="fade-up">
+            <img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?q=80&w=600&auto=format&fit=crop" alt="Croissant" loading="lazy">
+            <div class="overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+         
+          <div class="gallery-item" data-aos="fade-up" data-aos-delay="150">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=600&auto=format&fit=crop" alt="Coffee" loading="lazy">
+            <div class="overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+        
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials section-padding bg-light">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>What Our Customers Say</h2>
+          <p>Real reviews from real coffee lovers</p>
+        </div>
+        <div class="testimonial-grid" id="testimonialContainer"></div>
+      </div>
+    </section>
+
+    <!-- Contact Section (address removed) -->
+    <section id="contact" class="contact section-padding">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Get In Touch</h2>
+          <p>We'd love to hear from you</p>
+        </div>
+        <div class="contact-wrapper" data-aos="fade-up" data-aos-duration="700">
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="John Doe" required>
+              <span class="error-message"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="john@example.com" required>
+              <span class="error-message"></span>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" placeholder="+1 (555) 000-0000">
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" rows="4" placeholder="Tell us what you need..." required></textarea>
+              <span class="error-message"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            <div id="formFeedback" class="form-feedback"></div>
+          </form>
+          <div class="contact-info">
+            <div class="info-item">
+              <i class="fas fa-phone"></i>
+              <span>(555) 123-4567</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <span>hello@lilybakery.com</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-clock"></i>
+              <span>Mon-Sat: 7am - 8pm | Sun: 8am - 4pm</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4><i class="fas fa-bread-slice"></i> Lily</h4>
+        <p>Warm pastries, artisan coffee, and cozy vibes.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Opening Hours</h4>
+        <ul class="hours-list">
+          <li>Mon - Fri: 7:00 AM - 8:00 PM</li>
+          <li>Saturday: 8:00 AM - 9:00 PM</li>
+          <li>Sunday: 8:00 AM - 4:00 PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; 2025 Lily. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
