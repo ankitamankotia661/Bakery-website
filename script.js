@@ -1,4 +1,4 @@
-// js/script.js
+// script.js
 document.addEventListener('DOMContentLoaded', () => {
   AOS.init({ once: true, duration: 700 });
 
@@ -47,9 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Products (using placeholder images that always work)
   const products = [
-    { name: 'Croissant', price: '$3.50', rating: 5, desc: 'Buttery, flaky classic.', img: 'https://images.unsplash.com/photo-1555507036-ab1f4038024a?q=80&w=400&auto=format&fit=crop' },
     { name: 'Chocolate Cake', price: '$6.99', rating: 4.5, desc: 'Rich Belgian layers.', img: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=400&auto=format&fit=crop' },
     { name: 'Donut', price: '$2.99', rating: 4, desc: 'Glazed happiness.', img: 'https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=400&auto=format&fit=crop' },
     { name: 'Cinnamon Roll', price: '$4.50', rating: 5, desc: 'Warm, spiced delight.', img: 'https://images.unsplash.com/photo-1509365465985-25d11c17e812?q=80&w=400&auto=format&fit=crop' },
@@ -73,7 +71,6 @@ document.addEventListener('DOMContentLoaded', () => {
     `).join('');
   }
 
-  // Testimonials
   const testimonials = [
     { name: 'Emily Rose', text: 'Best croissants in town! Lily is incredibly cozy.', img: 'https://randomuser.me/api/portraits/women/44.jpg', stars: 5 },
     { name: 'Mark Daniels', text: 'Their cappuccino is perfection. I come every morning.', img: 'https://randomuser.me/api/portraits/men/32.jpg', stars: 4 },
@@ -91,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
     `).join('');
   }
 
-  // Contact validation
+
   contactForm?.addEventListener('submit', (e) => {
     e.preventDefault();
     let valid = true;
